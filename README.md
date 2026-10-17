@@ -1,3 +1,13 @@
+## Building blocks for quantitative MRI methods
+
+This is a development fork of [Deep-MR](https://github.com/INFN-MRI/deep-mr), a Python framework for developing MR acquisition and reconstruction methods with a focus on quantitative MRI. The upstream project brings scientific Python, PyTorch, and Numba components together for researchers exploring acquisition and reconstruction workflows.
+
+**Contribution to review:** [PR #5](https://github.com/INFN-MRI/deep-mr/pull/5) proposes explicitly rejecting an unsupported MPS device before entering a CUDA conversion path. The scope is clearer device handling in that conversion helper; it does not establish MPS support for Deep-MR.
+
+Use the [upstream documentation](https://infn-mri.github.io/deep-mr/) for API and usage examples, then follow the source-installation instructions below. The [branch comparison](https://github.com/INFN-MRI/deep-mr/compare/main...jdotc1:main) shows the default branch's relationship to upstream, while the linked proposal documents the focused device check.
+
+---
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/INFN-PREDATOR/deep-mr/blob/main/docs/source/figures/deepmr_logo_dark.png?raw=true">
